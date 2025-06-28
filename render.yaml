@@ -3,7 +3,7 @@ services:
     name: nyc-open-data-dashboard
     runtime: python
     buildCommand: pip install -r requirements.txt
-    startCommand: python app.py
+    startCommand: python app.ipynb
     envVars:
       - key: PYTHON_VERSION
         value: 3.9
