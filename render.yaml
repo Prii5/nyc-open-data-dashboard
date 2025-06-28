@@ -1,10 +1,8 @@
 services:
   - type: web
     name: nyc-open-data-dashboard
-    runtime: python
+    env: python
     buildCommand: pip install -r requirements.txt
-    startCommand: python app.ipynb
-    envVars:
-      - key: PYTHON_VERSION
-        value: 3.9
-
+    startCommand: python app.py
+    plan: free
+    autoDeploy: true
